@@ -1,10 +1,2 @@
-on: workflow_dispatch
-  push:
-    branches:
-      - main
-        -run: echo "main"
-      - branche1
-        -run: echo "branche1"      
-      - branche2
-        -run: echo "branche2"            
+on:          
 
