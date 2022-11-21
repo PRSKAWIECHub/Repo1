@@ -6,6 +6,5 @@ on: workflow_dispatch
       - branche1
         -run: echo "branche1"      
       - branche2
-      - branche1
         -run: echo "branche2"            
 
