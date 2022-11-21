@@ -1,0 +1,9 @@
+on: workflow_dispatch
+  push:
+    branches:
+      - main
+      - branche1
+      - branche2
+  schedule:
+    - cron: '0 0 * * *'
+
