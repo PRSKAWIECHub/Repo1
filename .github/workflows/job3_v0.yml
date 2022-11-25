@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: job1
     steps:
-    - run: echo "bibi"
+    - name: Lancer du PoweShell
+      run: Write-Host "Coucou"
+      shell: pwsh
+    - name: Python
+      run: print("Coucou")
+      shell: python
