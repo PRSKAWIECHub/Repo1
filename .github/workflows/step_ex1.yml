@@ -1,0 +1,6 @@
+name: step ex1
+
+on:
+  workflow_dispatch:
+jobs:
+  uses: rajbos/actions-testing@v1
