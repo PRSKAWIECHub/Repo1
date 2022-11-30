@@ -7,5 +7,5 @@ jobs:
     steps:
     - uses: lgmorand/github-action-hello@v2
       with:
-        firstname: jean
-        firstname2: marie
+        firstname: bruno
+        firstname2: prskawiec
