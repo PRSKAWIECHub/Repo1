@@ -4,6 +4,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - id: foo
         uses: devopsenggineer/hello-world-docker-action@v2.9
