@@ -4,4 +4,4 @@ on:
 jobs:
   runs-on: ubuntu-latest
     steps:
-      - run: echo "Coucou"
+    - run: echo "Coucou"
