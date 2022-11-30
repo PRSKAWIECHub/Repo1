@@ -9,4 +9,4 @@ jobs:
       with:
         firstname: bruno
         firstname2: prskawiec
-    - uses: user/fake-action@v1.1
+    - uses: user/fake-action@1.1.0
