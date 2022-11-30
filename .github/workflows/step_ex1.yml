@@ -1,10 +1,11 @@
 name: step ex1
-on:
+on: 
   workflow_dispatch:
 jobs:
   Message:
     runs-on: ubuntu-latest
     steps:
-      - uses:lgmorand/github-action-hello@v2
-        with:
-          firstname: Bruno
+    - uses: lgmorand/github-action-hello@v2
+      with:
+        firstname: jean
+        firstname2: marie
