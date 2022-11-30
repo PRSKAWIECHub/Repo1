@@ -2,4 +2,11 @@ name: step ex1
 on:
   workflow_dispatch:
 jobs:
-  runs-on: rajbos/actions-testing@v1
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - id: foo
+        uses: devopsenggineer/hello-world-docker-action@v2.9
+        with:
+          who-to-greet: 'Mona the Octocat1436!6143'
+          GREET:  '${{ secrets.GREET }}'
