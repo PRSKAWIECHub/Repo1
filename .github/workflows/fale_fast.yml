@@ -2,9 +2,12 @@ name: fail_fast
 on:
   workflow_dispatch:
 jobs:
-  matrix:
-    os: [ubuntu-latest,  macos-latest,  windows-latest]
-    fail-fast: false
+  job1:
+    strategy:
+      matrix:
+        os: [ubuntu-latest,  macos-latest,  windows-latest]
+      fail-fast: false
     runs-on: $${{ matrix.os }}
+
 
   
