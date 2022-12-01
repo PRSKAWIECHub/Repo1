@@ -1,0 +1,10 @@
+name: fail_fast
+on:
+  workflow_dispatch:
+jobs:
+  matrix:
+    os: [ubuntu-latest,  macos-latest,  windows-latest]
+  fail-fast: false
+  steps:
+  - run: echo $${{ matrix.os }}
+  
