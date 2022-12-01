@@ -10,6 +10,9 @@ jobs:
         exclude:
           - os: windows-latest
             node: 12
+        include:
+          - os: macos-latest
+            node: 9
     runs-on: $${{ matrix.os }}
     steps:
     - run: echo $${{ matrix.os }}
