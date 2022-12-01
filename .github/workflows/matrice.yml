@@ -2,10 +2,10 @@ name: matrice_ex
 on:
   workflow_dispatch:
 jobs:
-  job-matrix:
+  jobmatrix:
     strategy:
       matrix:
-        os: [ubuntu-latest,  macos-latest,  windows-latest]]
+        os: [ubuntu-latest,  macos-latest,  windows-latest]
         node: [10,12]
     runs-on: $${{ matrix.os }}
 
