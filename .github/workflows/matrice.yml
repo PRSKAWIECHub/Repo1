@@ -12,5 +12,5 @@ jobs:
             node: 12
     runs-on: $${{ matrix.os }}
     steps:
-    - run: echo "bibi"
+    - run: echo $${{ matrix.os }}
 
