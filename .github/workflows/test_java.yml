@@ -10,4 +10,8 @@ jobs:
         include:
           - java: 14
             testing: true
-  continue-on-error: ${{ matrix.testing  }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.testing }}
+    steps:
+    - run: echo $${{ matrix.java }}
+  
