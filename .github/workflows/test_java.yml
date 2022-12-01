@@ -1,0 +1,13 @@
+name: java_test
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    strategy:
+      matrix:
+        java: [8, 11]
+        testing: [false]
+        include:
+          - java: 14
+            testing: true
+  continue-on-error: ${{ matrix.testing  }}
