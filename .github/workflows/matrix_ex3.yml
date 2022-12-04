@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy application
-       - name: Deploy application
-         run: echo "Deploy on ${{ matrix.server }}"
+      - name: Deploy application
+        run: echo "Deploy on ${{ matrix.server }}"
